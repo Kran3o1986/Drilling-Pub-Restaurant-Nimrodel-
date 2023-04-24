@@ -1,0 +1,120 @@
+/* Estilos para pantalla extra grande */
+@media screen and (min-width: 1200px) {
+  #productos {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 8rem;
+  }
+  #productos .card {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #productos .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+/* Estilos para pantalla grande */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #productos {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 8rem;
+  }
+  #productos .card {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #productos .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+/* Estilos para pantalla mediana */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #productos {
+    width: 100%;
+    max-width: 991px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+  #productos .card {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #productos .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+/* Estilos para pantalla pequeña */
+@media screen and (max-width: 767px) {
+  #productos {
+    width: 100%;
+    max-width: 991px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+  #productos .card {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #productos .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

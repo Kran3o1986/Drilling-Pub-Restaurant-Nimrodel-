@@ -1,0 +1,24 @@
+#carrusel1 {
+    margin-top: 1.5rem;   
+}
+
+/* Estilos para pantalla grande */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #carrusel1 {
+        margin-top: 3rem;        
+    }
+  }
+  
+  /* Estilos para pantalla mediana */
+  @media screen and (min-width: 768px) and (max-width: 991px)  {
+    #carrusel1 {
+        margin-top: 25rem;       
+    }
+  }
+  
+  /* Estilos para pantalla pequeña */
+@media screen and (max-width: 767px) {
+    #carrusel1 {
+    margin-top: 55rem;
+     }
+    }
