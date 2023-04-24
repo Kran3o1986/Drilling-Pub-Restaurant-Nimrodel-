@@ -1,0 +1,64 @@
+/* Estilos para pantalla extra grande */
+@media screen and (min-width: 1200px) {
+  #form-comunicar,
+  #form-reservar {
+    width: 450px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    background-color: #070707;
+    color: white;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Estilos para pantalla grande */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #form-comunicar,
+  #form-reservar {
+    width: 80%px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #070707;
+    color: white;
+    margin-bottom: 2rem;
+     }
+}
+
+/* Estilos para pantalla mediana */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #form-comunicar,
+  #form-reservar {
+    width: 80%px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #070707;
+    color: white;
+    margin-bottom: 2rem;
+    display: none;
+    margin-top: 25rem; 
+  }
+}
+
+/* Estilos para pantalla pequeña */
+@media screen and (max-width: 767px) {  
+  #form-comunicar,
+  #form-reservar {
+    width: 80%px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #070707;
+    color: white;
+    margin-bottom: 2rem;
+    display: none;
+    display: none;
+    margin-top: 55rem; 
+  }
+}

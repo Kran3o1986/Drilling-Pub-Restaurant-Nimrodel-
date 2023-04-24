@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap");
+
+/* Estilos para pantalla extra grande */
+@media screen and (min-width: 1200px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+.titulo {
+  text-align: center;
+}
+
+/* Estilos para pantalla grande */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* Estilos para pantalla mediana */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* Estilos para pantalla pequeña */
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
