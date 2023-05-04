@@ -47,30 +47,4 @@ function ocultarReservar() {
     document.getElementById('form-reservar').style.display = "none";
 }
 
-/*
-function achicarImg() {
-    document.getElementById("bebidas") .style.width= "20%";
-  }
-  
-  function agrandarImg() {
-    document.getElementById("bebidas") .style.width= "100%";
-  }
-  
-  function achicarImg() {
-    document.getElementById("cervezas") .style.width= "20%";
-  }
-  
-  function agrandarImg() {
-    document.getElementById("cervezas") .style.width= "100%";
-  }
-  
-  function achicarImg() {
-    document.getElementById("tablas") .style.width= "20%";
-  }
-  
-  function agrandarImg() {
-    document.getElementById("tablas") .style.width= "100%";
-  }
-  */
 
-  

@@ -1,36 +1,3 @@
-.capa-imagen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-}
-
-#imagen-agrandada {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  display: none;
-}
-
-#cerrar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 2rem;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-
-
 /* Estilos para pantalla extra grande */
 @media screen and (min-width: 1200px) {
   #productos {

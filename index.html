@@ -28,9 +28,9 @@
     <!-- Navbar -->
     <div class="container" id="navbar">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/img/n.png" height="30px" width="30px"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/n.png" height="30px" width="30px"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -63,40 +63,44 @@
 </div>
 
         <!-- Productos -->
-        <div class="container" id="productos">
-            <div class="row">
+        
+            <div class="container" id="productos">
+              <div class="row">
                 <div class="card col-xl-4 col-lg-4 col-md-6 col-12" style="width: 18rem;" id="bebidas">
-                    <img src="assets/img/bebidas.jpg" class="bebidas" alt="bebidas" onclick="agrandarImg()" ondblclick="achicarImg()">
-                    <div class="card-body">
-                        <h5 class="card-title">Bebidas</h5>
-                        <p class="card-text">Aquí puedes encontrar una gran variedad de bebidas y jugos naturales.</p>
-                        <!--<a href="#" class="btn btn-primary">Link</a>-->
-                    </div>
+                  <img src="assets/img/bebidas.jpg" class="bebidas" alt="bebidas" onclick="agrandarImg(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Bebidas</h5>
+                    <p class="card-text">Aquí puedes encontrar una gran variedad de bebidas y jugos naturales.</p>
+                  </div>
                 </div>
-
+          
                 <div class="card col-xl-4 col-lg-4 col-md-6 col-12" style="width: 18rem;" id="cervezas">
-                    <img src="assets/img/shop.jpeg" class="cervezas" alt="cervezas" onclick="agrandarImg()" ondblclick="achicarImg()">
-                    <div class="card-body">
-                        <h5 class="card-title">Shops</h5>
-                        <p class="card-text">Los mejores shops en cervezas nacionales e internacionales.</p>
-                        <!--<a href="#" class="btn btn-primary">Link</a>-->
-                    </div>
+                  <img src="assets/img/shop.jpeg" class="cervezas" alt="cervezas" onclick="agrandarImg(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Shops</h5>
+                    <p class="card-text">Los mejores shops en cervezas nacionales e internacionales.</p>
+                  </div>
                 </div>
-
-                <div class="card col-xl-4 col-lg-4 col-md-4 col-12" style="width: 18rem;" id="tablas">
-                    <img src="assets/img/tablas.jpg" class="tablas" alt="tablas" onclick="agrandarImg()" ondblclick="achicarImg()">
-                    <div class="card-body">
-                        <h5 class="card-title">Tablas</h5>
-                        <p class="card-text">Si tienes hambre, tenemos para ofrecerte una amplia selección de tablas
-                            para ti.
-                        </p>
-                        <!--<a href="#" class="btn btn-primary">Link</a>-->
-                    </div>
+          
+                <div class="card col-xl-4 col-lg-4 col-md-12 col-12" style="width: 18rem;" id="tablas">
+                  <img src="assets/img/tablas.jpg" class="tablas" alt="tablas" onclick="agrandarImg(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Tablas</h5>
+                    <p class="card-text">Si tienes hambre, tenemos para ofrecerte una amplia selección de tablas para ti.</p>
+                  </div>
                 </div>
-
+              </div>
             </div>
-        </div>
-    </div>
+          
+            <div id="imagen-agrandada">
+                <span id="cerrar" onclick="achicarImg()">X</span>
+                <img id="img-agrandada" src="" alt="">
+              </div>
+          
+          
+          
+          
+    
 
     <!-- Formularios -->
     <div class="container" id="formularios">
