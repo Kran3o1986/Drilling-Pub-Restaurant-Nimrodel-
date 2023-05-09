@@ -1,50 +1,142 @@
-function capturarDatosComunicar() {
-    var nombre = $("#nombreComunicar").val();
-    var correo = $("#correoComunicar").val();
-    alert("Hola " + nombre + ", Hemos recibido tu mensaje y pronto te responderemos al siguiente correo: " + correo);
-    window.location.href = "index.html";
+console.log("🟢 conectado!");
+
+function mostrarForm(item) {
+  document.querySelector(item).classList.remove("d-none");
+}
+
+const formContacto = document.querySelector("#formContacto");
+
+//FORM DE CONTACTO
+//sección con vanilla JS
+
+formContacto.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nombreContacto = document.querySelector("#nombreContacto");
+  const correoContacto = document.querySelector("#correoContacto");
+  const telefonoContacto = document.querySelector("#telefonoContacto");
+  const motivo = document.querySelector("#motivo");
+  const comentario = document.querySelector("#comentario");
+
+  if (!nombreContacto.value.trim()) {
+    alert("El campo 'Nombre' es obligatorio");
+    nombreContacto.focus();
+    return;
   }
-  
-  function capturarDatosReservar() {
-    var nombre = $("#nombreReservar").val();
-    var correo = $("#correoReservar").val();
-    var asistentes = $("#asistentesReservar").val();
-    if (asistentes > 1){
-    alert("Estima@ " + nombre + ", gracias por reservar con nosotros.\nHemos registrado " + asistentes + " asistentes.\nEnviamos el codigo de confirmacion al siguiente correo: " + correo);
-  } else {
-    alert("Estima@ " + nombre + ", gracias por reservar con nosotros.\nHemos registrado " + asistentes + " asistente.\nEnviamos el codigo de confirmacion al siguiente correo: " + correo);
-    window.location.href = "index.html";  
-}
+
+  if (!correoContacto.value.trim()) {
+    alert("El campo 'Correo' es obligatorio");
+    correoContacto.focus();
+    return;
   }
 
-function mostrarOcultarComunicar() {
-    if (window.matchMedia("(min-width: 1px) and (max-width: 991px)").matches) {
-    document.getElementById('form-reservar').style.display = "none";
-    document.getElementById('form-comunicar').style.display = "block";
-}
-}
+  if (!telefonoContacto.value.trim()) {
+    alert("El campo 'Teléfono' es obligatorio");
+    telefonoContacto.focus();
+    return;
+  }
 
-function mostrarOcultarReservar() {
-    if (window.matchMedia("(min-width: 1px) and (max-width: 991px)").matches) {
-    document.getElementById('form-comunicar').style.display = "none";
-    document.getElementById('form-reservar').style.display = "block";
-}
-}
+  if (!motivo.value.trim()) {
+    alert("El campo 'Motivo' es obligatorio");
+    motivo.focus();
+    return;
+  }
 
-function mostrarComunicar() {
-    document.getElementById('form-comunicar').style.display = "block";
-}
+  if (!comentario.value.trim()) {
+    alert("El campo 'Comentario' es obligatorio");
+    comentario.focus();
+    return;
+  }
 
-function mostrarReservar() {
-    document.getElementById('form-reservar').style.display = "block";
-}
+  alert(
+    `Muchas gracias ${nombreContacto.value}. Hemos recibido su sugerencia y enviaremos una pronta respuesta al correo ${correoContacto.value}.`
+  );
 
-function ocultarComunicar() {
-    document.getElementById('form-comunicar').style.display = "none";
-}
+  formContacto.reset();
+  comentario.value = "";
+});
 
-function ocultarReservar() {
-    document.getElementById('form-reservar').style.display = "none";
-}
+//FORM DE RESERVAS
+//sección con jQuery
 
+$(document).ready(function () {
+  $("#formReservas").submit(function (e) {
+    e.preventDefault();
 
+    if (!$("#nombreReserva").val().trim()) {
+      alert("El campo 'Nombre' es obligatorio");
+      $("#nombreReserva").focus();
+      return;
+    }
+
+    if (!$("#correoReserva").val().trim()) {
+      alert("El campo 'Correo' es obligatorio");
+      $("#correoReserva").focus();
+      return;
+    }
+
+    if (!$("#telefonoReserva").val().trim()) {
+      alert("El campo 'Teléfono' es obligatorio");
+      $("#telefonoReserva").focus();
+      return;
+    }
+
+    if (!$("#fecha").val().trim()) {
+      alert("El campo 'Fecha' es obligatorio");
+      $("#fecha").focus();
+      return;
+    }
+
+    if (!$("#hora").val().trim()) {
+      alert("El campo 'Hora' es obligatorio");
+      $("#hora").focus();
+      return;
+    }
+
+    if (!$("#cantidadAsistentes").val().trim()) {
+      alert("El campo 'Cantidad de asistentes' es obligatorio");
+      $("#cantidadAsistentes").focus();
+      return;
+    }
+
+    alert(
+      `Estimado/a ${$("#nombreReserva").val()}:
+Agradecemos por reservar con nosotros. Hemos registrado ${$(
+        "#cantidadAsistentes"
+      ).val()} asistentes. Se ha enviado un código de confirmación al correo ${$(
+        "#correoReserva"
+      ).val()}.
+Gracias por preferirnos`
+    );
+
+    $("#formReservas").trigger("reset");
+  });
+
+  //CARD CON JQUERY
+  //gaseosas
+  $("#cardGaseosas").click(function () {
+    $("#gaseosasModal").show();
+  });
+
+  $("#closeGaseosasModal").click(function () {
+    $("#gaseosasModal").hide();
+  });
+
+  //tablas
+  $("#cardTablas").click(function () {
+    $("#tablasModal").show();
+  });
+
+  $("#closeTablasModal").click(function () {
+    $("#tablasModal").hide();
+  });
+
+  //shop
+  $("#cardShop").click(function () {
+    $("#shopModal").show();
+  });
+
+  $("#closeShopModal").click(function () {
+    $("#shopModal").hide();
+  });
+});

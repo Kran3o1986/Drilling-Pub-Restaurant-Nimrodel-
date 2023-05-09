@@ -1,114 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap");
-
-/* Estilos para pantalla extra grande */
-@media screen and (min-width: 1200px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    font-family: "Rajdhani", sans-serif;
-  }
-
-  .scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
+/*HEADER */
+nav {
+  background-image: url("../img/fondo.jpg");
+  background-size: 40%;
 }
 
-.titulo {
-  text-align: center;
+/* CARD */
+.card img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* Estilos para pantalla grande */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    font-family: "Rajdhani", sans-serif;
-  }
-  .scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
+/* CAROUSEL */
+#carruselNimrodel img {
+  width: 100% !important;
+  height: 450px;
+  object-fit: cover;
 }
 
-/* Estilos para pantalla mediana */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    font-family: "Rajdhani", sans-serif;
-  }
-  .scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
+/* FOOTER */
+footer {
+  background-image: url("../img/fondo.jpg");
 }
 
-/* Estilos para pantalla pequeña */
-@media screen and (max-width: 767px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    font-family: "Rajdhani", sans-serif;
-  }
-  .scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
+.carousel {
+  padding: 0 !important;
+}
+
+/* CUSTOM MODAL */
+
+.custom-modal {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.custom-modal :first-child {
+  margin-right: 100%;
 }
